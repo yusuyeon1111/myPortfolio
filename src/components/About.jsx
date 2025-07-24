@@ -39,7 +39,7 @@ function About() {
                         <p>24.04 ~ [재직중] (약 1년 5개월)</p>
                         <p>SI 프로젝트 4개, SM 프로젝트 1개를 수행했습니다.</p>
                     </div>
-                   <div class="skills-container">
+                   <div className="skills-container">
                     <h2>실무 경험 기술</h2>
                         
                     </div>

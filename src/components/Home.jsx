@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import '../css/Home.css'
-import folderFront from '../static/img/MainImg/folderFront.png'
+
 import folderBack from '../static/img/MainImg/folderBack.png'
 import AnimateComponent from './AnimateComponent'
 function Home() {
@@ -27,7 +27,6 @@ function Home() {
               <p id='firstP'>Welcome to my</p>
               <img src={folderBack} id='folderBack'/>
               <p id='portfolio'>Portfolio</p>
-              <img src={folderFront} id='folderFront'/>
               <AnimateComponent/>
             </div>
           </div>
