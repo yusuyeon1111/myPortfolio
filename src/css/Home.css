@@ -1,0 +1,250 @@
+@font-face {
+    font-family: 'ghanachoco';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ghanachoco.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MaruBuri';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.woff2) format("woff2"), url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.ttf) format("truetype");
+}
+
+.home-container {
+  max-height: 750px;
+  padding: 30px;
+  background-image: url('../static/img/MainImg/background.jpg');
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* 햄버거 버튼 고정 */
+.hambuger {
+  width: 30px;
+  height: 24px;
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.hambuger span {
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: #333;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  transform-origin: center;
+}
+
+.hambuger span:nth-child(1) {
+  top: -8px;
+}
+
+.hambuger span:nth-child(2) {
+  top: 0;
+}
+
+.hambuger span:nth-child(3) {
+  top: 8px;
+}
+
+.hambuger.active span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.hambuger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hambuger.active span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+/* 메뉴와 콘텐츠 정렬 */
+.item-container {
+  display: flex;
+  height: 100%;
+  margin-top: 60px;
+}
+
+/* 메뉴 */
+.menuOpen {
+  width: 220px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.menuOpen p {
+  font-size: clamp(1rem, 2vw, 2rem);
+  margin: 15px 0;
+}
+
+.info-container {
+  margin-top: -8%;
+  flex: 1;
+  text-align: center;
+  padding: 2rem;
+}
+
+#firstP {
+  font-family: 'ghanachoco';
+  font-size: clamp(2rem, 3vw, 5rem);
+  margin-bottom: -1px;
+}
+
+#portfolio {
+  margin-top: -17%;
+  font-family: 'ghanachoco';
+  font-size: 10vw;
+}
+
+#infoBottom p:first-child{
+  margin-top: -0.25%;
+  font-family: 'ghanachoco';
+  font-size: clamp(1.5rem, 3vw, 3rem);
+}
+#infoBottom p:nth-child(2){
+  margin-top: -1.5%;
+  font-size: clamp(1rem, 1.5vw, 2rem);
+}
+
+#infoBottom p:nth-child(3), p:nth-child(4), p:nth-child(5){
+  font-size: clamp(1rem, 1vw, 2rem);
+  margin-top: 3%;
+}
+
+#portfolio { margin-top: -18%; margin-bottom: -10%;}
+@media (max-width: 400px) {
+  .info-line span:first-child {
+    display: none;
+  }
+  .info-line span:last-child {
+    display: none;
+  }
+    .menuOpen + .info-container {
+    display: none;
+  }
+  .menuOpen {
+    background: none;
+    width: 100%;
+  }
+}
+@media (max-width: 1800px) {
+  #portfolio { margin-top: -19%; margin-bottom: -9%;}
+}
+@media (max-width: 1700px) {
+  #portfolio { margin-top: -21%; margin-bottom: -9%;}
+}
+@media (max-width: 1600px) {
+  #portfolio { margin-top: -22%; margin-bottom: -9%;}
+}
+@media (max-width: 1500px) {
+  #portfolio { margin-top: -22.5%; margin-bottom: -9%;}
+}
+@media (max-width: 1400px) {
+  #portfolio { margin-top: -23%; margin-bottom: -11%;}
+}
+@media (max-width: 1350px) {
+  #portfolio {margin-top: -24.5%; margin-bottom: -11%;}
+}
+@media (max-width: 1300px) {
+  #portfolio {margin-top: -25%; margin-bottom: -11%;}
+}
+@media (max-width: 1200px) {
+  #portfolio {margin-top: -28%; margin-bottom: -14%; font-size: 10vw;}
+}
+@media (max-width: 1100px) {
+  #portfolio {margin-top: -29.5%; margin-bottom: -15%;}
+}
+@media (max-width: 1000px) {
+  #portfolio {margin-top: -31%; margin-bottom: -16%; }
+}
+@media (max-width: 970px) {
+  #portfolio {margin-top: -34%; margin-bottom: -17%; font-size: 11vw;}
+}
+@media (max-width: 920px) {
+  #portfolio {margin-top: -35; margin-bottom: -17%;}
+}
+@media (max-width: 880px) {
+  #portfolio {font-size: 12.4vw;}
+}
+@media (max-width: 870px) {
+  #portfolio {margin-top: -38.5%; margin-bottom: -19%; font-size: 12.5vw;}
+}
+@media (max-width: 850px) {
+  #portfolio {margin-top: -39%; margin-bottom: -19%; font-size: 13.5vw;}
+}
+@media (max-width: 820px) {
+  #portfolio {margin-top: -41%; margin-bottom: -19%; font-size: 13.5vw;}
+}
+@media (max-width: 800px) {
+  #portfolio {margin-top: -43%; margin-bottom: -19%;}
+}
+@media (max-width: 760px) {
+  #portfolio {font-size: 14vw;}
+}
+@media (max-width: 740px) {
+  #portfolio {margin-top: -48%; margin-bottom: -21%; font-size: 15vw;}
+}
+@media (max-width: 700px) {
+  #portfolio {margin-top: -48%; margin-bottom: -23%; font-size: 16vw;}
+}
+@media (max-width: 690px) {
+  #portfolio {margin-top: -43%; margin-bottom: -23%; font-size: 16vw;}
+  #folderFront {width: 77%;}
+  #folderBack {width: 77%;}
+}
+@media (max-width: 690px) {
+  #portfolio {margin-top: -42%; margin-bottom: -23%; font-size: 16vw;}
+  #folderFront {width: 77%;}
+  #folderBack {width: 77%;}
+}
+@media (max-width: 490px) {
+  #portfolio {margin-top: -42%; margin-bottom: -21%; font-size: 14vw;}
+}
+@media (max-width: 500px) {
+  #portfolio {margin-top: -39%; margin-bottom: -23%; font-size: 14vw;}
+}
+@media (max-width: 460px) {
+  #portfolio {font-size: 14vw;}
+}
+
+@media (max-width: 430px) {
+  #portfolio {margin-top: -40%; margin-bottom: -22%;}
+}
+
+@media (max-width: 420px) {
+  #portfolio { margin-top: -42%; margin-bottom: -21%;}}
+
+@media (max-width: 400px) {
+   #portfolio { margin-top: -45%; margin-bottom: -26%;}
+  #folderFront {width: 88%;}
+  #folderBack {width: 88%;}
+}
+@media (max-width: 390px) {
+  #portfolio { margin-top: -44%; margin-bottom: -24%;}
+  #folderFront {width: 86%;}
+  #folderBack {width: 86%;}
+}
+@media (max-width: 380px) {
+  #folderFront {width: 83%;}
+  #folderBack {width: 83%;}
+}
+@media (max-width: 360px) {
+  #folderFront {width: 84%;}
+  #folderBack {width: 84%;}
+}
+
+
+

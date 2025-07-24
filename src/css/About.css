@@ -1,0 +1,93 @@
+.about-container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.education {
+ padding: 1rem;
+  background-color: cornsilk;
+  text-align: center;
+  border-radius: 16px;
+}
+
+.education .card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.education .card > div {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.education .card > div:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+.card > div p:first-of-type {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.education .card img:nth-child(1) {
+  width: 80px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.education .card > div.proof-card {
+  width: 220px;
+}
+
+.education .card > div.proof-card img {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  margin-bottom: 1rem;
+}
+
+.education p:nth-child(1) {
+    font-size: clamp(1.4rem, 2.7vw, 3rem);
+}
+
+#workWord {
+    font-size: clamp(1.4rem, 2.7vw, 3rem);
+}
+.top-work {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px; /* 요소 사이 간격 */
+  margin-top: 20px;
+  flex-wrap: wrap; /* 화면 작아지면 아래로 내려가도록 */
+}
+
+.top-work > div:first-child {
+  flex: 1;
+  min-width: 250px;
+}
+
+.skills-container {
+  flex: 1;
+  min-width: 280px;
+  padding: 20px;
+  border-radius: 12px;
+  background: #fdfdfd;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
