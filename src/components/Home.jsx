@@ -11,6 +11,7 @@ function Home() {
               <p id='firstP'>Welcome to my</p>
               <img src={folderBack} id='folderBack'/>
               <p id='portfolio'>Portfolio</p>
+              <div className='spacer' />
               <AnimateComponent/>
             </div>
         </div>

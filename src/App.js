@@ -6,8 +6,9 @@ import About from './components/About';
 function App() {
   return (
     <div className="App">
-      <Home/>
-      <p id='about-p'>ABOUT ME</p>
+      <div className='home-wrapper'>
+        <Home/>
+      </div>
       <About/>
     </div>
   );

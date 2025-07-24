@@ -1,4 +1,26 @@
+@font-face {
+  font-family: 'Freesentation-9Black';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-9Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'EliceDigitalBaeum-Bd';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_elice@1.0/EliceDigitalBaeum-Bd.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#about-p {
+  font-family: 'ghanachoco';
+  font-size: 5rem;
+  padding-top: 1%;
+  margin-bottom: -0.3%;
+}
+
 .about-container {
+  font-family: 'EliceDigitalBaeum-Bd';
   max-width: 1500px;
   margin: 0 auto;
   padding-left: 2rem;
@@ -11,6 +33,14 @@
   text-align: center;
   border-radius: 16px;
 }
+
+.education p {  font-family: 'EliceDigitalBaeum-Bd';}
+
+.education p:nth-child(1) {
+  font-size: 7rem;
+}
+
+.education p:nth-child(n+1) {font-size: 1.3rem;}
 
 .education .card {
   display: flex;
@@ -36,15 +66,20 @@
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
 }
 
-.card > div p:first-of-type {
-  font-size: 1.5rem;
+.card > div p:nth-child(2) {
+  margin-top: -1%;
+  font-size: clamp(1.5rem, 2vw, 2rem);
   font-weight: bold;
+}
+
+.card > div p:nth-child(n+3) {
+  margin-top: -1%;
+  font-size: clamp(1rem, 1.2vw, 2rem);
 }
 
 .education .card img:nth-child(1) {
   width: 80px;
   height: auto;
-  margin-bottom: 1rem;
 }
 
 .education .card > div.proof-card {
@@ -58,7 +93,6 @@
   object-fit: contain;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  margin-bottom: 1rem;
 }
 
 .education p:nth-child(1) {
@@ -82,12 +116,50 @@
   min-width: 250px;
 }
 
-.skills-container {
-  flex: 1;
-  min-width: 280px;
+.skil-container {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   padding: 20px;
+}
+
+.skil-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 180px;
+}
+
+.skil-group p {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.icon-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.icon-row img {
+  width: 70px;
+  height: 70px;
+  padding: 10px;
+  background-color: #f5f5f5;
   border-radius: 12px;
-  background: #fdfdfd;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+.icon-row img:hover {
+  transform: scale(1.05);
+}
+
+
+#skils {
+  font-size: clamp(1.4rem, 2.7vw, 3rem);
 }
 

@@ -1,4 +1,12 @@
-#about-p {
-  font-size: clamp(2rem, 3.8vw, 4rem);
-  margin-left: 3%;
+.home-wrapper {
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+.about-wrapper {
+  margin-top: -28vh; /* 화면 위로 올림 */
+  position: relative;
+  z-index: 2;
+  background-color: white;
 }

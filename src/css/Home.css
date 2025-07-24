@@ -12,17 +12,21 @@
 }
 
 @font-face {
-  font-family: 'GmarketSansMedium';
-  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-family: 'EliceDigitalBaeum-Bd';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_elice@1.0/EliceDigitalBaeum-Bd.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
 .home-container {
+  height: 100vh; /* 전체 화면 */
   padding: 30px;
   background-image: url('../static/img/MainImg/background.jpg');
   box-sizing: border-box;
   position: relative;
+}
+.spacer {
+  height: 30vh; /* 스크롤을 유도하기 위한 빈 공간 */
 }
 
 /* 메뉴와 콘텐츠 정렬 */
@@ -52,6 +56,7 @@
 }
 
 #firstP {
+  color: dimgrey;
   margin-top: -2%;
   font-family: 'ghanachoco';
   font-size: clamp(2rem, 3vw, 5rem);
@@ -70,18 +75,18 @@
   font-size: clamp(2.3rem, 3.1vw, 3rem);
 }
 #infoBottom p:nth-child(2){
-  font-family: 'GmarketSansMedium';
+  font-family: 'EliceDigitalBaeum-Bd';
   margin-top: -1.5%;
   margin-bottom: 3%;
   font-size: clamp(1.3rem, 1.5vw, 2rem);
 }
 
 #infoBottom p:nth-child(n+3){
-  font-family: 'GmarketSansMedium';
+  font-family: 'EliceDigitalBaeum-Bd';
   font-size: clamp(1rem, 1.3vw, 2rem);
 }
 
-#folderFront {margin-top: -10%;}
+#folderFront {margin-top: -12%;}
 @media (max-width: 1800px) {
   #folderFront {margin-top: -12%;}
   #portfolio { margin-top: -19%;}
