@@ -19,61 +19,10 @@
 }
 
 .home-container {
-  max-height: 750px;
   padding: 30px;
   background-image: url('../static/img/MainImg/background.jpg');
   box-sizing: border-box;
   position: relative;
-}
-
-/* 햄버거 버튼 고정 */
-.hambuger {
-  width: 30px;
-  height: 24px;
-  position: absolute;
-  top: 40px;
-  left: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  z-index: 1000;
-}
-
-.hambuger span {
-  position: absolute;
-  height: 3px;
-  width: 100%;
-  background-color: #333;
-  border-radius: 2px;
-  transition: all 0.3s ease;
-  transform-origin: center;
-}
-
-.hambuger span:nth-child(1) {
-  top: -8px;
-}
-
-.hambuger span:nth-child(2) {
-  top: 0;
-}
-
-.hambuger span:nth-child(3) {
-  top: 8px;
-}
-
-.hambuger.active span:nth-child(1) {
-  transform: rotate(45deg);
-  top: 0;
-}
-
-.hambuger.active span:nth-child(2) {
-  opacity: 0;
-}
-
-.hambuger.active span:nth-child(3) {
-  transform: rotate(-45deg);
-  top: 0;
 }
 
 /* 메뉴와 콘텐츠 정렬 */
@@ -86,7 +35,6 @@
 /* 메뉴 */
 .menuOpen {
   width: 220px;
-  background-color: rgba(255, 255, 255, 0.8);
   padding: 20px;
   transition: all 0.3s ease;
   box-sizing: border-box;
@@ -98,13 +46,13 @@
 }
 
 .info-container {
-  margin-top: -8%;
   flex: 1;
   text-align: center;
   padding: 2rem;
 }
 
 #firstP {
+  margin-top: -2%;
   font-family: 'ghanachoco';
   font-size: clamp(2rem, 3vw, 5rem);
   margin-bottom: -1px;
@@ -117,81 +65,68 @@
 }
 
 #infoBottom p:nth-child(1){
-  margin-top: -15%;
+  margin-top: -10%;
   font-family: 'ghanachoco';
-  font-size: clamp(1.5rem, 3vw, 3rem);
+  font-size: clamp(2.3rem, 3.1vw, 3rem);
 }
 #infoBottom p:nth-child(2){
   font-family: 'GmarketSansMedium';
   margin-top: -1.5%;
-  margin-bottom: 7%;
-  font-size: clamp(0.8rem, 1.5vw, 2rem);
+  margin-bottom: 3%;
+  font-size: clamp(1.3rem, 1.5vw, 2rem);
 }
 
-#infoBottom p:nth-child(3), p:nth-child(4), p:nth-child(5){
+#infoBottom p:nth-child(n+3){
   font-family: 'GmarketSansMedium';
-  font-size: clamp(0.6rem, 1vw, 2rem);
-  margin-top: 3%;
+  font-size: clamp(1rem, 1.3vw, 2rem);
 }
 
-@media (max-width: 400px) {
-  .info-line span:first-child {
-    display: none;
-  }
-  .info-line span:last-child {
-    display: none;
-  }
-    .menuOpen + .info-container {
-    display: none;
-  }
-  .menuOpen {
-    background: none;
-    width: 100%;
-  }
-}
-#folderFront {margin-top: -20%;}
+#folderFront {margin-top: -10%;}
 @media (max-width: 1800px) {
-  #folderFront {margin-top: -18%;}
+  #folderFront {margin-top: -12%;}
   #portfolio { margin-top: -19%;}
 }
 @media (max-width: 1700px) {
-  #folderFront {margin-top: -17%;}
+  #folderFront {margin-top: -11%; margin-bottom: -2%;} 
+  #infoBottom p:nth-child(3){margin-top: 5%;}
   #portfolio { margin-top: -21%;}
 }
 @media (max-width: 1600px) {
-  #folderFront {margin-top: -16%;}
+  #folderFront {margin-top: -10%;}
   #portfolio { margin-top: -22%;}
 }
 @media (max-width: 1500px) {
-  #folderFront {margin-top: -15%;}
+  #folderFront {margin-top: -8%;}
   #portfolio { margin-top: -22.5%}
 }
 @media (max-width: 1400px) {
-  #folderFront {margin-top: -14%;}
+  #infoBottom p:nth-child(n+3) {font-size: 1.3rem;}
+  #folderFront {margin-top: -7%; margin-bottom: -4%;}
   #portfolio { margin-top: -23%;}
 }
-@media (max-width: 1350px) {
-  #folderFront {margin-top: -12%;}
-  #portfolio {margin-top: -24.5%;}
-}
+
 @media (max-width: 1300px) {
-  #folderFront {margin-top: -10%;}
+  #folderFront {margin-top: -9%;}
   #portfolio {margin-top: -25%;}
 }
 @media (max-width: 1200px) {
-  #folderFront {margin-top: -8%;}
+  #folderFront {margin-top: -7%;}
   #portfolio {margin-top: -28%;font-size: 10vw;}
 }
 @media (max-width: 1100px) {
-  #folderFront {margin-top: -7%;}
+  #folderFront {margin-top: -7%; }
+  #infoBottom {margin-top: -13%;}
   #portfolio {margin-top: -29.5%;}
 }
 @media (max-width: 1000px) {
+  #infoBottom {margin-top: -15%;}
+  #infoBottom p:nth-child(2){margin-bottom: 7%;}
   #folderFront {margin-top: -6%;}
   #portfolio {margin-top: -31%;}
 }
 @media (max-width: 970px) {
-  #infoBottom {margin-top: -8%;}
+  #infoBottom {margin-top: -15%;}
+  #infoBottom p:nth-child(2){margin-bottom: 10%;}
   #portfolio {margin-top: -34%; font-size: 11vw;}
 }
 @media (max-width: 920px) {
@@ -200,13 +135,19 @@
 }
 @media (max-width: 880px) {
   #folderFront {margin-top: -8%;}
+  #infoBottom {margin-top: -15%;}
+  #infoBottom p:nth-child(2){margin-bottom: 7%;}
   #portfolio {font-size: 12.4vw;}
 }
 @media (max-width: 870px) {
+  #infoBottom {margin-top: -15%;}
+  #infoBottom p:nth-child(2){margin-bottom: 7%;}
   #folderFront {margin-top: -10%; margin-bottom: -5%;}
   #portfolio {margin-top: -38.5%; font-size: 12.5vw;}
 }
 @media (max-width: 850px) {
+  #infoBottom {margin-top: -15%;}
+  #infoBottom p:nth-child(2){margin-bottom: 7%;}
   #folderFront {margin-top: -10%;}
   #portfolio {margin-top: -39%; font-size: 13.5vw;}
 }
@@ -215,51 +156,68 @@
   #portfolio {margin-top: -41%; font-size: 13.5vw;}
 }
 @media (max-width: 800px) {
+  #infoBottom {margin-top: -20%;}
   #portfolio {margin-top: -43%; }
 }
-@media (max-width: 760px) {
+@media (max-width: 770px) {
+  #infoBottom p:nth-child(n+3) {font-size: 1.2rem;}
   #portfolio {font-size: 14vw;}
 }
 @media (max-width: 740px) {
+  #folderFront {margin-bottom: -10%;}
+  #infoBottom p:nth-child(2){margin-bottom: 10%;}
   #portfolio {margin-top: -48%;  font-size: 15vw;}
 }
-@media (max-width: 700px) {
+@media (max-width: 720px) {
   #portfolio {margin-top: -48%;  font-size: 16vw;}
 }
 @media (max-width: 690px) {
   #portfolio {margin-top: -43%;  font-size: 16vw;}
   #folderFront {width: 77%;}
   #folderBack {width: 77%;}
+  #infoBottom p:nth-child(n+3) {font-size: 1rem;}
 }
-@media (max-width: 690px) {
-  #folderFront {margin-top: -10%;}
+@media (max-width: 590px) {
+  #folderFront {margin-top: -5%;}
   #portfolio {margin-top: -42%; font-size: 16vw;}
   #folderFront {width: 77%;}
   #folderBack {width: 77%;}
 }
-@media (max-width: 570px) {
+@media (max-width: 575px) {
+  #infoBottom p:nth-child(n+3) {font-size: 0.9rem;}
   #folderFront {margin-top: -1.5%;}
 }
-@media (max-width: 490px) {
-  #portfolio {margin-top: -42%; font-size: 14vw;}
-}
-@media (max-width: 510px) {
+@media (max-width: 520px) {
+  #folderFront {margin-bottom: -10%;}
+  #infoBottom p:nth-child(1) {font-size: 1.8rem; }
+  #infoBottom p:nth-child(2){margin-bottom: 10%;margin-top: -3%; font-size: 1rem;}
+  #infoBottom p:nth-child(n+3) {font-size: 0.75rem;}
   #infoBottom {margin-top: -20%;}
   #portfolio {margin-top: -39%; font-size: 14vw; margin-bottom: 25%;}
 }
+@media (max-width: 490px) {
+  #folderFront {margin-top: 5%;}
+  #infoBottom p:nth-child(2){margin-bottom: 10%; margin-top: -7%;}
+  #portfolio {margin-top: -42%; font-size: 14vw;}
+  #infoBottom p:nth-child(n+3) {font-size: 0.7rem;}
+}
 @media (max-width: 460px) {
   .home-container {max-height: 600px;}
-  #infoBottom {margin-top: -25%;}
+  #infoBottom {margin-top: -20%;}
   #portfolio {font-size: 14vw;}
   #folderFront {margin-top: 5%;}
+  #infoBottom p:nth-child(n+3) {font-size: 0.6rem;}
 }
 
 @media (max-width: 430px) {
+  .info-container{height: 380px;}
+  #infoBottom p:nth-child(n+3) {font-size: 0.65rem;}
   #portfolio {margin-top: -40%; }
   #folderFront {margin-top: 8%;}
 }
 
 @media (max-width: 420px) {
+  #infoBottom p:nth-child(n+3) {font-size: 0.6rem;}
   #portfolio { margin-top: -42%;}}
 
 @media (max-width: 400px) {
@@ -268,21 +226,49 @@
   #folderBack {width: 88%;}
 }
 @media (max-width: 390px) {
+  #infoBottom p:nth-child(n+3) {font-size: 0.55rem;}
   #portfolio { margin-top: -44%; margin-bottom: 30%;}
   #folderFront {width: 86%; margin-top: 8%;}
   #folderBack {width: 86%;}
-  #infoBottom {margin-top: -30%;}
+  #infoBottom {margin-top: -28%;}
 }
 @media (max-width: 380px) {
+  #infoBottom p:nth-child(n+3) {font-size: 0.55rem;}
   .home-container {max-height: 480px; padding: 0%;}
   #folderFront {width: 83%;}
   #folderBack {width: 83%;}
-  #infoBottom p:nth-child(2){margin-bottom: 13%;}
+  #infoBottom p:nth-child(1) {font-size: 1.5rem; margin-top: 6%;}
+  #infoBottom p:nth-child(2){margin-bottom: 13%; font-size: 0.8rem;}
+  #infoBottom p:nth-child(n+3) {font-size: 0.6rem;}
   .item-container {margin-top: 0;}
   #firstP {margin-top: 20%;}
 }
 @media (max-width: 360px) {
-  #folderFront {width: 84%;}
+  #infoBottom p:nth-child(n+3) {font-size: 0.57rem;}
+  #folderFront {width: 84%; margin-top: 20%;}
+   #infoBottom p:nth-child(1) {font-size: 1rem; margin-bottom: 10%;}
+  #folderBack {width: 84%;}
+}
+@media (max-width: 300px) {
+  #folderFront {width: 84%; margin-top: 30%;}
+   #infoBottom p:nth-child(1) {font-size: 1rem; margin-bottom: 10%;}
+  #folderBack {width: 84%;}
+}
+@media (max-width: 270px) {
+  #folderFront {width: 84%; margin-top: 40%;}
+   #infoBottom p:nth-child(1) {font-size: 1rem; margin-bottom: 10%;}
+   #infoBottom p:nth-child(n+3) {font-size: 0.4rem;;}
+  #folderBack {width: 84%;}
+}
+@media (max-width: 260px) {
+  #folderFront {width: 84%; margin-top: 40%;}
+   #infoBottom p:nth-child(1) {font-size: 1rem; margin-bottom: 10%;}
+   #infoBottom p:nth-child(n+3) {font-size: 0.35rem;;}
+  #folderBack {width: 84%;}
+}
+@media (max-width: 240px) {
+  #folderFront {width: 84%; margin-top: 50%;}
+   #infoBottom p:nth-child(2) {font-size: 0.5rem; margin-bottom: 10%;}
   #folderBack {width: 84%;}
 }
 
