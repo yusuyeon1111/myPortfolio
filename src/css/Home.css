@@ -25,29 +25,6 @@
   box-sizing: border-box;
   position: relative;
 }
-.spacer {
-  height: 30vh; /* 스크롤을 유도하기 위한 빈 공간 */
-}
-
-/* 메뉴와 콘텐츠 정렬 */
-.item-container {
-  display: flex;
-  height: 100%;
-  margin-top: 60px;
-}
-
-/* 메뉴 */
-.menuOpen {
-  width: 220px;
-  padding: 20px;
-  transition: all 0.3s ease;
-  box-sizing: border-box;
-}
-
-.menuOpen p {
-  font-size: clamp(1rem, 2vw, 2rem);
-  margin: 15px 0;
-}
 
 .info-container {
   flex: 1;
@@ -60,222 +37,111 @@
   margin-top: -2%;
   font-family: 'ghanachoco';
   font-size: clamp(2rem, 3vw, 5rem);
-  margin-bottom: -1px;
+  margin-bottom: -3%;
+}
+
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+#folderImg {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 #portfolio {
-  margin-top: -17%;
+  position: absolute;
+  top: 22%;       
+  left: 50%;     
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  color: #575545;   
+  white-space: nowrap;
   font-family: 'ghanachoco';
-  font-size: 10vw;
+  font-size: clamp(2.5rem, 10vw, 11rem);
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
 }
 
-#infoBottom p:nth-child(1){
-  margin-top: -10%;
-  font-family: 'ghanachoco';
-  font-size: clamp(2.3rem, 3.1vw, 3rem);
-}
-#infoBottom p:nth-child(2){
-  font-family: 'EliceDigitalBaeum-Bd';
-  margin-top: -1.5%;
-  margin-bottom: 3%;
-  font-size: clamp(1.3rem, 1.5vw, 2rem);
+.click-container {
+  position: absolute;
+  top: 85%;
+  right: -4rem;
+  transform: translate(-50%, -50%);
 }
 
-#infoBottom p:nth-child(n+3){
-  font-family: 'EliceDigitalBaeum-Bd';
-  font-size: clamp(1rem, 1.3vw, 2rem);
+#click {
+  max-width: 140px;
+  transition: transform 0.3s ease;
 }
 
-#folderFront {margin-top: -12%;}
-@media (max-width: 1800px) {
-  #folderFront {margin-top: -12%;}
-  #portfolio { margin-top: -19%;}
-}
-@media (max-width: 1700px) {
-  #folderFront {margin-top: -11%; margin-bottom: -2%;} 
-  #infoBottom p:nth-child(3){margin-top: 5%;}
-  #portfolio { margin-top: -21%;}
-}
-@media (max-width: 1600px) {
-  #folderFront {margin-top: -10%;}
-  #portfolio { margin-top: -22%;}
-}
-@media (max-width: 1500px) {
-  #folderFront {margin-top: -8%;}
-  #portfolio { margin-top: -22.5%}
-}
-@media (max-width: 1400px) {
-  #infoBottom p:nth-child(n+3) {font-size: 1.3rem;}
-  #folderFront {margin-top: -7%; margin-bottom: -4%;}
-  #portfolio { margin-top: -23%;}
+#click:hover {
+  transform: scale(1.1);
 }
 
-@media (max-width: 1300px) {
-  #folderFront {margin-top: -9%;}
-  #portfolio {margin-top: -25%;}
-}
-@media (max-width: 1200px) {
-  #folderFront {margin-top: -7%;}
-  #portfolio {margin-top: -28%;font-size: 10vw;}
-}
-@media (max-width: 1100px) {
-  #folderFront {margin-top: -7%; }
-  #infoBottom {margin-top: -13%;}
-  #portfolio {margin-top: -29.5%;}
-}
-@media (max-width: 1000px) {
-  #infoBottom {margin-top: -15%;}
-  #infoBottom p:nth-child(2){margin-bottom: 7%;}
-  #folderFront {margin-top: -6%;}
-  #portfolio {margin-top: -31%;}
-}
-@media (max-width: 970px) {
-  #infoBottom {margin-top: -15%;}
-  #infoBottom p:nth-child(2){margin-bottom: 10%;}
-  #portfolio {margin-top: -34%; font-size: 11vw;}
-}
-@media (max-width: 920px) {
-  #folderFront {margin-top: -6%;}
-  #portfolio {margin-top: -35%; }
-}
-@media (max-width: 880px) {
-  #folderFront {margin-top: -8%;}
-  #infoBottom {margin-top: -15%;}
-  #infoBottom p:nth-child(2){margin-bottom: 7%;}
-  #portfolio {font-size: 12.4vw;}
-}
-@media (max-width: 870px) {
-  #infoBottom {margin-top: -15%;}
-  #infoBottom p:nth-child(2){margin-bottom: 7%;}
-  #folderFront {margin-top: -10%; margin-bottom: -5%;}
-  #portfolio {margin-top: -38.5%; font-size: 12.5vw;}
-}
-@media (max-width: 850px) {
-  #infoBottom {margin-top: -15%;}
-  #infoBottom p:nth-child(2){margin-bottom: 7%;}
-  #folderFront {margin-top: -10%;}
-  #portfolio {margin-top: -39%; font-size: 13.5vw;}
-}
-@media (max-width: 820px) {
-  #folderFront {margin-top: -10%;}
-  #portfolio {margin-top: -41%; font-size: 13.5vw;}
-}
-@media (max-width: 800px) {
-  #infoBottom {margin-top: -20%;}
-  #portfolio {margin-top: -43%; }
-}
-@media (max-width: 770px) {
-  #infoBottom p:nth-child(n+3) {font-size: 1.2rem;}
-  #portfolio {font-size: 14vw;}
-}
-@media (max-width: 740px) {
-  #folderFront {margin-bottom: -10%;}
-  #infoBottom p:nth-child(2){margin-bottom: 10%;}
-  #portfolio {margin-top: -48%;  font-size: 15vw;}
-}
-@media (max-width: 720px) {
-  #portfolio {margin-top: -48%;  font-size: 16vw;}
-}
-@media (max-width: 690px) {
-  #portfolio {margin-top: -43%;  font-size: 16vw;}
-  #folderFront {width: 77%;}
-  #folderBack {width: 77%;}
-  #infoBottom p:nth-child(n+3) {font-size: 1rem;}
-}
-@media (max-width: 590px) {
-  #folderFront {margin-top: -5%;}
-  #portfolio {margin-top: -42%; font-size: 16vw;}
-  #folderFront {width: 77%;}
-  #folderBack {width: 77%;}
-}
-@media (max-width: 575px) {
-  #infoBottom p:nth-child(n+3) {font-size: 0.9rem;}
-  #folderFront {margin-top: -1.5%;}
-}
-@media (max-width: 520px) {
-  #folderFront {margin-bottom: -10%;}
-  #infoBottom p:nth-child(1) {font-size: 1.8rem; }
-  #infoBottom p:nth-child(2){margin-bottom: 10%;margin-top: -3%; font-size: 1rem;}
-  #infoBottom p:nth-child(n+3) {font-size: 0.75rem;}
-  #infoBottom {margin-top: -20%;}
-  #portfolio {margin-top: -39%; font-size: 14vw; margin-bottom: 25%;}
-}
-@media (max-width: 490px) {
-  #folderFront {margin-top: 5%;}
-  #infoBottom p:nth-child(2){margin-bottom: 10%; margin-top: -7%;}
-  #portfolio {margin-top: -42%; font-size: 14vw;}
-  #infoBottom p:nth-child(n+3) {font-size: 0.7rem;}
-}
-@media (max-width: 460px) {
-  .home-container {max-height: 600px;}
-  #infoBottom {margin-top: -20%;}
-  #portfolio {font-size: 14vw;}
-  #folderFront {margin-top: 5%;}
-  #infoBottom p:nth-child(n+3) {font-size: 0.6rem;}
+.click-container::after {
+  content: "Click!";
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #333;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  transition: opacity 0.3s ease;
 }
 
-@media (max-width: 430px) {
-  .info-container{height: 380px;}
-  #infoBottom p:nth-child(n+3) {font-size: 0.65rem;}
-  #portfolio {margin-top: -40%; }
-  #folderFront {margin-top: 8%;}
+#infoBottom {
+  opacity: 0;
+  animation: fadeIn 0.8s ease forwards;
 }
 
-@media (max-width: 420px) {
-  #infoBottom p:nth-child(n+3) {font-size: 0.6rem;}
-  #portfolio { margin-top: -42%;}}
-
-@media (max-width: 400px) {
-   #portfolio { margin-top: -45%; }
-  #folderFront {width: 88%; margin-top: 8%;}
-  #folderBack {width: 88%;}
-}
-@media (max-width: 390px) {
-  #infoBottom p:nth-child(n+3) {font-size: 0.55rem;}
-  #portfolio { margin-top: -44%; margin-bottom: 30%;}
-  #folderFront {width: 86%; margin-top: 8%;}
-  #folderBack {width: 86%;}
-  #infoBottom {margin-top: -28%;}
-}
-@media (max-width: 380px) {
-  #infoBottom p:nth-child(n+3) {font-size: 0.55rem;}
-  .home-container {max-height: 480px; padding: 0%;}
-  #folderFront {width: 83%;}
-  #folderBack {width: 83%;}
-  #infoBottom p:nth-child(1) {font-size: 1.5rem; margin-top: 6%;}
-  #infoBottom p:nth-child(2){margin-bottom: 13%; font-size: 0.8rem;}
-  #infoBottom p:nth-child(n+3) {font-size: 0.6rem;}
-  .item-container {margin-top: 0;}
-  #firstP {margin-top: 20%;}
-}
-@media (max-width: 360px) {
-  #infoBottom p:nth-child(n+3) {font-size: 0.57rem;}
-  #folderFront {width: 84%; margin-top: 20%;}
-   #infoBottom p:nth-child(1) {font-size: 1rem; margin-bottom: 10%;}
-  #folderBack {width: 84%;}
-}
-@media (max-width: 300px) {
-  #folderFront {width: 84%; margin-top: 30%;}
-   #infoBottom p:nth-child(1) {font-size: 1rem; margin-bottom: 10%;}
-  #folderBack {width: 84%;}
-}
-@media (max-width: 270px) {
-  #folderFront {width: 84%; margin-top: 40%;}
-   #infoBottom p:nth-child(1) {font-size: 1rem; margin-bottom: 10%;}
-   #infoBottom p:nth-child(n+3) {font-size: 0.4rem;;}
-  #folderBack {width: 84%;}
-}
-@media (max-width: 260px) {
-  #folderFront {width: 84%; margin-top: 40%;}
-   #infoBottom p:nth-child(1) {font-size: 1rem; margin-bottom: 10%;}
-   #infoBottom p:nth-child(n+3) {font-size: 0.35rem;;}
-  #folderBack {width: 84%;}
-}
-@media (max-width: 240px) {
-  #folderFront {width: 84%; margin-top: 50%;}
-   #infoBottom p:nth-child(2) {font-size: 0.5rem; margin-bottom: 10%;}
-  #folderBack {width: 84%;}
+#infoBottom p {
+  font-size: clamp(1rem, 1vw, 1.4rem);
 }
 
+.scroll-indicator {
+  text-align: center;
+  margin-top: 20px;
+  animation: bounce 2s infinite;
+}
 
+.scroll-indicator span {
+  font-size: 1.5rem;
+}
 
+.scroll-indicator .arrow {
+  width: 20px;
+  height: 20px;
+  border-left: 3px solid #555;
+  border-bottom: 3px solid #555;
+  transform: rotate(-45deg);
+  margin: 0 auto;
+}
+
+@media(max-width:1400px) {#portfolio {top: 25%;}}
+@media(max-width:740px) {#portfolio {top: 32%;} #click {width: 80%;}}
+@media(max-width:675px) {#click {width: 60%;}}
+@media(max-width:590px) {.click-container{right: -20%;}
+@media(max-width:500px) {#click {width: 50%;} .click-container{right: -28%;}}}
+@media(max-width:470px) {#portfolio {font-size: 3rem;} #click {width: 45%;}}
+@media(max-width:410px) {#click {width: 40%;} #portfolio{font-size: 2.5rem; top: 28%;} .click-container{right: -8rem} }
+@media(max-width:340px) {#click {width: 30%;} #portfolio{font-size: 2rem; top: 28%;}}
+@media(max-width:300px) {#click {width: 25%;} #portfolio{font-size: 1.5rem; top: 27%;}}
+@media(max-width:250px) {#click {width: 20%;} #portfolio{font-size: 1rem; top: 27%;}}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(8px); }
+}

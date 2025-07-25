@@ -17,21 +17,9 @@ import git from '../static/img/logo/git.png'
 import svn from '../static/img/logo/svn.png'
 function About() {
   return (
-    <motion.div
-        initial={{ opacity: 0, y: 150 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true , amount : 0.1 }}
-        className='about-wrapper'
-        transition={{
-            ease: "easeInOut",
-            duration: 2,
-            y: { duration: 1 },
-        }}
-    >
         <div className='about-container'>
         <p id='about-p'>ABOUT ME</p>
         <div>
-           
         </div>
         <p id='skils'>SKILS 🔧</p>
         <div className='skil-container'>
@@ -102,7 +90,6 @@ function About() {
                     </div>
                     </div>
                     </div>
-    </motion.div>
   )
 }
 
