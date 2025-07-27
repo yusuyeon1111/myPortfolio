@@ -1,8 +1,12 @@
 import React from 'react'
 import '../css/Project.css'
+import { useNavigate } from 'react-router-dom'
 function Kamis() {
+  const navigate = useNavigate()
   return (
   <div className="project-container">
+    <button className="close-button" onClick={() => navigate(-1)}>✕</button>
+    <div className='project-inner'>
   <span className="project-label">WORK</span>
   <h3>🍏 KAMIS 식재료백과 유지보수</h3>
   <p className="project-period">2025.06.13 ~ 2025.07.07</p>
@@ -40,6 +44,7 @@ function Kamis() {
    <div className='project-content'>
    <span>단독 파견 근무를 통해 담당 주무관과 직접 소통하며 요구사항을 관리하고, 개발 일정 조율 및 진행 상황을 보고하였습니다. 이를 통해 불확실성을 최소화하고 신속한 의사결정을 유도하여 프로젝트를 안정적으로 완료할 수 있었습니다.</span>
   </div>
+</div>
 </div>
   )
 }

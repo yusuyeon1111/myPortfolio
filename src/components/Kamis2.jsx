@@ -1,8 +1,12 @@
 import React from 'react'
 import '../css/Project.css'
+import { useNavigate } from 'react-router-dom'
 function Kamis2() {
+  const navigate = useNavigate()
   return (
       <div className="project-container">
+        <button className="close-button" onClick={() => navigate(-1)}>✕</button>
+    <div className='project-inner'>
       <span className="project-label">WORK</span>
       <h3>🫒 KAMIS 식재료 백과 개편 용역</h3>
       <p className="project-period">2024.09.02 ~ 2024.11.12</p>
@@ -45,6 +49,7 @@ function Kamis2() {
       'KAMIS 식재료 백과 개편 용역' 프로젝트는 저의 기획 및 개발 역량을 동시에 발휘할 수 있었던 소중한 경험이었습니다.<br/>
        사용자 편의성과 운영 효율성이라는 명확한 목표 아래, 시스템의 설계부터 실제 기능 구현까지 전반적인 프로세스를 주도하며 성공적으로 서비스를 개편할 수 있었습니다. <br/>
       </div>
+    </div>
     </div>
   )
 }

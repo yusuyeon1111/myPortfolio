@@ -1,8 +1,12 @@
  import React from 'react'
  import '../css/Project.css'
+ import { useNavigate } from 'react-router-dom'
  function IoT() {
+  const navigate = useNavigate()
    return (
      <div className="project-container">
+      <button className="close-button" onClick={() => navigate(-1)}>✕</button>
+      <div className='project-inner'>
       <span className="project-label">WORK</span>
       <h3>🖥️ IoT 운영관리시스템 고도화</h3>
       <p className="project-period">2024.11.14 ~ 2025.03.19</p>
@@ -51,6 +55,7 @@
       프로젝트 마감 직전, 고객사의 핵심 요구사항이 갑작스럽게 변경되면서 개발 일정이 급박해지는 도전적인 상황에 직면했습니다. 저는 당황하지 않고 프로젝트 수행팀과의 소통을 통해 기능 개발의 우선순위를 신속하게 재조정하고, 현실적인 일정 재수립을 통해 상황에 적극적으로 대응했습니다. 또한, 팀원들과의 소통을 통해 변경된 요구사항의 불확실성을 최소화하고, 상호 협력하며 프로젝트를 안정적으로 성공리에 완료할 수 있었습니다. 
       </div>
       <div className='spacer'></div>
+    </div>
     </div>
    )
  }

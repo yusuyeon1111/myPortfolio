@@ -46,7 +46,7 @@ function Skils() {
 
     return (
         <div className="skil-container">
-          <p id="skils">SKILS 🔧</p>
+          <h1 id="skils">SKILS 🔧</h1>
     
           <div className="skil-tag">
             {tags.map(tag => (
@@ -70,6 +70,7 @@ function Skils() {
               />
             ))}
           </div>
+          <div id='space'></div>
         </div>
       );
 }

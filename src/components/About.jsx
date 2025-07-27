@@ -18,9 +18,9 @@ function About() {
       <div className="right-section">
         <div className='inner-left'>
         <div className="summary">
-          <p>웹 서비스의 안정성과 효율을 중요하게 생각합니다.</p>
-          <p>사용자 중심의 기능 구현과 유지보수를 고려한 구조 설계를 지향합니다.</p>
-          <p>팀과의 소통을 통해 더 나은 서비스를 만드는 데에 보람을 느낍니다.</p>
+          <p>🔸 웹 서비스의 안정성과 효율을 중요하게 생각합니다.</p>
+          <p>🔸 사용자 중심의 기능 구현과 유지보수를 고려한 구조 설계를 지향합니다.</p>
+          <p>🔸 팀과의 소통을 통해 더 나은 서비스를 만드는 데에 보람을 느낍니다.</p>
         </div>
         <div className="work-section">
             <h3>WORK</h3>

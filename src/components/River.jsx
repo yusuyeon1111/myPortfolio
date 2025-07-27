@@ -1,8 +1,12 @@
 import React from 'react'
 import '../css/Project.css'
+import { useNavigate } from 'react-router-dom'
 function River() {
+  const navigate = useNavigate()
   return (
     <div className="project-container">
+      <button className="close-button" onClick={() => navigate(-1)}>✕</button>
+      <div className='project-inner'>
       <span className="project-label">WORK</span>
       <h3>🏞️ 4대강 수계기금 결산 시스템 개편용역</h3>
       <p className="project-period">25.02.26 ~ 25.06.13</p>
@@ -44,6 +48,7 @@ function River() {
         복잡한 결산금액 산출을 위한 함수와 프로시저를 직접 개발 및 개선하여 시스템 안정성과 결산 데이터의 신뢰도를 강화했습니다.
         </li>
       </ul>
+    </div>
     </div>
   )
 }

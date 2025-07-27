@@ -1,9 +1,13 @@
 import React from 'react'
 import '../css/Project.css'
 import github from '../static/img/logo/github.png'
+import { useNavigate } from 'react-router-dom'
 function Free() {
+  const navigate = useNavigate();
   return (
     <div className="project-container">
+      <button className="close-button" onClick={() => navigate(-1)}>✕</button>
+    <div className='project-inner'>
       <a href='https://github.com/yusuyeon1111/project.git'><img src={github} /></a>
       <br/>
      <span className="project-label">개인 프로젝트</span>
@@ -76,6 +80,7 @@ function Free() {
        </li>
      </ul>
      <div className='spacer'></div>
+   </div>
    </div>
   )
 }

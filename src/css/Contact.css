@@ -17,22 +17,24 @@
   
   .thank-you {
     font-family: 'ghanachoco';
-    font-size: clamp(8rem, 8vw, 10rem);
+    font-size: clamp(5rem, 8vw, 10rem);
     color: moccasin;
     animation: slideUp 1s ease-out;
     margin-bottom: -2%;
   }
   
   .message {
-    font-size: 1.3rem;
+    font-family: 'GangwonEdu_OTFBoldA';
+    font-size: clamp(1rem, 1.5vw, 2.5rem);
     color: #555;
     animation: slideUp 1.2s ease-out;
     margin-bottom: 3%;
+    margin-top: 3%;
   }
   
   .contact-title {
     margin-bottom: -1%;
-    font-size: 2.5rem;
+    font-size: clamp(1rem, 2vw, 3rem);
     font-weight: 800;
     color: lightcoral;
     animation: slideUp 1.4s ease-out;

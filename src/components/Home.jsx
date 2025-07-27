@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import '../css/Home.css'
 import folder from '../static/img/MainImg/folder.png'
+import { IoMdDownload } from "react-icons/io";
 function Home() {
   return (
         <div className='home-container'>
@@ -10,9 +11,13 @@ function Home() {
                 <img src={folder} id="folderImg" />
                 <p id="portfolio">portfolio</p>
               </div>
-              <p>이력서 다운로드</p>
-              <button>다운로드</button>
-              
+              <div className="resume-download-container">
+                <p className="resume-download-title">이력서 다운로드</p>
+                <a href="/path-to-resume.pdf" download>
+                  <button className="resume-download-button">다운로드 <IoMdDownload /></button>
+                </a>
+              </div>
+
             </div>
         </div>
 

@@ -17,9 +17,13 @@
   font-weight: normal;
   font-style: normal;
 }
-
+@font-face {
+  font-family: 'GangwonEdu_OTFBoldA';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 .home-container {
-  height: 100vh;
   padding: 30px;
   background-image: url('../static/img/MainImg/background.jpg');
   box-sizing: border-box;
@@ -123,6 +127,37 @@
   border-bottom: 3px solid #555;
   transform: rotate(-45deg);
   margin: 0 auto;
+}
+.resume-download-container {
+  text-align: center;
+  font-family: 'Cafe24ClassicType', sans-serif;
+  color: #555;
+}
+
+.resume-download-title {
+  font-family: 'GangwonEdu_OTFBoldA';
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.resume-download-button {
+  background-color: #fff5dc;
+  border: 2px solid #d9a441;
+  color: #3d3d3d;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.6rem 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.resume-download-button:hover {
+  background-color: #ffecb3;
+  color: #222;
+  transform: scale(1.05);
 }
 
 @media(max-width:1400px) {#portfolio {top: 25%;} }

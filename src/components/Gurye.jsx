@@ -1,8 +1,12 @@
 import React from 'react'
 import '../css/Project.css'
+import { useNavigate } from 'react-router-dom'
 function Gurye() {
+  const navigate = useNavigate()
   return (
     <div className="project-container">
+    <button className="close-button" onClick={() => navigate(-1)}>✕</button>
+    <div className='project-inner'>
     <span className="project-label">WORK</span>
     <h3>구례군청 홈페이지 시스템 통합 유지보수</h3>
     <p className="project-period">2025.11.14 ~ 2025.02.25</p>
@@ -31,6 +35,7 @@ function Gurye() {
         <strong>홈페이지 유지보수 및 운영 안정화:</strong>구례군청 홈페이지의 전반적인 유지보수 업무를 수행하며 시스템 안정화에 기여했습니다. 정기적인 점검 및 개선 작업을 통해 오류를 최소화하고, 사용자 불편 사항을 해소하여 홈페이지의 지속적인 운영 안정성을 확보했습니다.
       </li>
     </ul>
+  </div>
   </div>
   )
 }

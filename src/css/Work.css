@@ -75,3 +75,10 @@
   color: #444;
   line-height: 1.6;
 }
+
+@media(max-width: 420px) {
+  .project-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+  }
+}

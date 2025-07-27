@@ -2,8 +2,9 @@ import React, { useState } from 'react'
 import flow from '../static/img/letmein/flowchart.jpg'
 import ER from '../static/img/letmein/erDiagram.png'
 import sys from '../static/img/letmein/system.jpg'
-
+import { useNavigate } from 'react-router-dom'
 function Letmein() {
+  const navigate = useNavigate()
   const [isOpen, setIsOpen] = useState({
     flow: false,
     sys: false,
@@ -16,6 +17,8 @@ function Letmein() {
 
   return (
     <div className="project-container">
+      <button className="close-button" onClick={() => navigate(-1)}>✕</button>
+      <div className='project-inner'>
       <span className="project-label">Project</span>
       <h3>letmetin - yolo 기반 체형확인 및 패션 스타일러 플랫폼</h3>
       <p className="project-period">2025.06.13 ~ 2025.07.07</p>
@@ -67,6 +70,7 @@ function Letmein() {
           이를 통해 불확실성을 최소화하고 신속한 의사결정을 유도하여 프로젝트를 안정적으로 완료할 수 있었습니다.
         </span>
       </div>
+    </div>
     </div>
   )
 }

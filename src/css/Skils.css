@@ -20,12 +20,10 @@
   align-items: center;
   text-align: center;
   margin-bottom: 5%;
-  height: 60vh;
 }
 
 #skils {
   margin-top: 6rem;
-  font-family: 'goorm-sans-bold';
   font-size: clamp(2rem, 2.5vw, 4rem);
   margin-bottom: 1rem;
 }
@@ -77,7 +75,9 @@
   opacity: 0.2;
   transition: opacity 0.4s ease, transform 0.3s ease;
 }
-
+#space {
+  margin-bottom: 5%;
+}
 /* 선택된 태그일 경우 진하게 */
 .icon-group img.active {
   opacity: 1;
