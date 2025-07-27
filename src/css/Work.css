@@ -1,85 +1,69 @@
-.work-container {
-   height: 100vh;
-  scroll-snap-align: start;
-  padding: 1% 10%;
+.work-section2 {
+  padding: 80px 10%;
   background-color: #f9f9f9;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center; 
 }
 
-.work-container h1 {
-  width: 100%;
-  font-size: 2rem;
-  font-weight: bold;
-  color: #222;
+.section-header {
   text-align: center;
-  margin: 0;
+  margin-bottom: 60px;
+}
+.section-header h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #111;
+  margin-top: -1.5rem;
+}
+.section-header p {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 8px;
 }
 
-.work-content {
-  width: 280px; /* 고정 크기 */
-  background-color: #ffffff;
-  border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  padding: 27px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  flex-shrink: 0; 
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
 }
 
-.work-content:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+.project-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  padding: 24px 28px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
 }
 
-.work-container h3 {
-  font-size: 1.3rem;
-  margin-bottom: 10px;
-  color: #333;
+.card-header h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 6px;
+}
+.card-period {
+  display: block;
+  font-size: 0.9rem;
+  color: #999;
+  margin-bottom: 12px;
 }
 
-.work-container p {
+.card-icons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+.card-icons img {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+}
+
+.card-description {
   font-size: 0.95rem;
-  color: #555;
-  margin-bottom: 8px;
-  line-height: 1.5;
-}
-
-.work-container img {
-  width: 28px;
-  height: 28px;
-  margin-right: 8px;
-  vertical-align: middle;
-}
-@media screen and (max-width: 1400px) {
-    .work-container {padding: 2% 0;}
-}
-@media screen and (max-width: 880px) {
-    .work-container {padding: 0;}
-}
-@media screen and (max-width: 770px) {
-  .work-container {
-    padding: 10%;
-    justify-content: center;
-  }
-
-  .work-content {
-    width: 100%;
-    padding: 16px;
-  }
-
-  .work-container h1 {
-    font-size: 1.5rem;
-  }
-
-  .work-container h3 {
-    font-size: 1.1rem;
-  }
-
-  .work-container img {
-    width: 24px;
-    height: 24px;
-  }
-
+  color: #444;
+  line-height: 1.6;
 }

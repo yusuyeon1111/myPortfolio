@@ -19,8 +19,6 @@
 }
 
 .home-container {
-   height: 100vh;
-  scroll-snap-align: start;
   padding: 30px;
   background-image: url('../static/img/MainImg/background.jpg');
   box-sizing: border-box;

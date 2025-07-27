@@ -5,6 +5,7 @@ import Main from './components/Main'
 import './App.css'
 import Skils from './components/Skils';
 import Work from './components/Work';
+import MyProject from './components/Myproject';
 function App() {
   return (
     <div className="App">
@@ -12,6 +13,7 @@ function App() {
         <About className="inner about"/>
         <Main className="inner main"/>
         <Work/>
+        <MyProject/>
         <Skils/>
     </div>
   );

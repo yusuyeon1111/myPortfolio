@@ -16,14 +16,9 @@ import linux from '../static/img/logo/linux.png'
 import tomcat from '../static/img/logo/tomcat.png'
 import mssql from '../static/img/logo/mssql.png'
 import gitlab from '../static/img/logo/gitlab.png'
-import python from '../static/img/logo/python.png'
-import flask from '../static/img/logo/flask.png'
-import html5 from '../static/img/logo/html5.png'
-import css3 from '../static/img/logo/css3.png'
-import react from '../static/img/logo/react.png'
 import '../css/Work.css'
 
-function Work() {
+function MyProject() {
   const [modalComponent, setModalComponent] = useState(null)
 
   const openModal = (Component) => setModalComponent(<Component />)
@@ -31,7 +26,7 @@ function Work() {
 
   const projectList = [
     {
-      title: 'KAMIS 식재료백과 유지보수',
+      title: '',
       period: '25.06.13 ~ 25.07.07',
       icons: [boot, javascript, oracle, linux],
       description: '단독 백엔드 개발자로 참여해 보안 강화, 성능 개선, 사용자 편의 기능을 구현하며 안정적인 시스템 운영을 이끌었습니다.',
@@ -64,21 +59,14 @@ function Work() {
       icons: [boot, javascript, oracle, linux],
       description: '기획 및 백엔드 개발자로 참여해 콘텐츠 편집 기능과 UI 중심의 관리자 페이지를 구현했습니다.',
       component: Kamis2
-    },
-    {
-      title: '신입사원 역량 강화를 위한 자유 프로젝트',
-      period: '24.05.01 ~ 24.06.01',
-      icons: [python, flask, javascript, react, html5, css3],
-      description: '기획 및 백엔드 개발자로 참여해 콘텐츠 편집 기능과 UI 중심의 관리자 페이지를 구현했습니다.',
-      component: Free
     }
   ]
 
   return (
     <section className='work-section2'> 
       <div className='section-header'>
-        <h1>경력사항</h1>
-        <p>(주) 쿠로엔시스 재직 중 수행한 프로젝트 입니다.</p>
+        <h1>Project</h1>
+        <p>스마트인재개발원 수료 당시 프로젝트와 개인 프로젝트 입니다.</p>
       </div>
 
       <div className='project-grid'>
@@ -109,4 +97,4 @@ function Work() {
   )
 }
 
-export default Work
+export default MyProject
