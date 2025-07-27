@@ -6,6 +6,7 @@ import './App.css'
 import Skils from './components/Skils';
 import Work from './components/Work';
 import MyProject from './components/Myproject';
+import Contact from './components/Contact';
 function App() {
   return (
     <div className="App">
@@ -15,6 +16,7 @@ function App() {
         <Work/>
         <MyProject/>
         <Skils/>
+        <Contact/>
     </div>
   );
 }

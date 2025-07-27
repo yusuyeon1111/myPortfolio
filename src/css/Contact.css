@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'ghanachoco';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ghanachoco.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+  .contact-container {
+    background-image: url('../static/img/MainImg/background.jpg');
+    padding: 50px 40px;
+    text-align: center;
+    animation: fadeIn 1.2s ease-out;
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+  }
+  
+  .thank-you {
+    font-family: 'ghanachoco';
+    font-size: clamp(8rem, 8vw, 10rem);
+    color: moccasin;
+    animation: slideUp 1s ease-out;
+    margin-bottom: -2%;
+  }
+  
+  .message {
+    font-size: 1.3rem;
+    color: #555;
+    animation: slideUp 1.2s ease-out;
+    margin-bottom: 3%;
+  }
+  
+  .contact-title {
+    margin-bottom: -1%;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: lightcoral;
+    animation: slideUp 1.4s ease-out;
+  }
+  
+  .contact-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1.1rem;
+    animation: fadeIn 1.5s ease-out;
+    margin-bottom: -2%;
+  }
+  
+  .phone-icon {
+    font-size: 1.5rem;
+    color: #000;
+    animation: bounce 2s infinite;
+  }
+  
+  .phone-text {
+    font-size: 1.2rem;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes slideUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+  }
+  
+  /* Optional: Responsive */
+  @media (max-width: 600px) {
+    .contact-title {
+      font-size: 2rem;
+    }
+  
+    .phone-text {
+      font-size: 1rem;
+    }
+  
+    .contact-container {
+      padding: 60px 20px;
+    }
+  }
+  

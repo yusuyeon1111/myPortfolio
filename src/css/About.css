@@ -27,8 +27,8 @@
 }
 
 .right-section {
+  display: flex;
   flex: 3;
-  min-width: 300px;
 }
 
 .summary {
@@ -38,10 +38,12 @@
   line-height: 1.6;
 }
 
+.inner-right {
+  margin-left: 7%;
+}
+
 .info-columns {
-  display: flex;
   gap: 3rem;
-  flex-wrap: wrap;
 }
 
 .work-section, .education-section {
