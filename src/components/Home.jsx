@@ -12,10 +12,7 @@ function Home() {
               </div>
               <p>이력서 다운로드</p>
               <button>다운로드</button>
-                <div className="scroll-indicator">
-                  <span>Scroll</span>
-                  <div className="arrow"></div>
-                </div>
+              
             </div>
         </div>
 

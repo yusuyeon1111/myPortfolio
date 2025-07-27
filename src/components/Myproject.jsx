@@ -4,18 +4,20 @@ import Kamis from './Kamis'
 import River from './River'
 import Gurye from './Gurye'
 import Iot from './IoT'
-import Free from './Free'
+import Letmein from './Letmein'
 import Kamis2 from './Kamis2'
 import boot from '../static/img/logo/boot.png'
 import spring from '../static/img/logo/spring.png'
 import javascript from '../static/img/logo/javascript.png'
 import oracle from '../static/img/logo/oracle.png'
-import maria from '../static/img/logo/mariadb.png'
-import svn from '../static/img/logo/svn.png'
+import html5 from '../static/img/logo/html5.png'
+import css3 from '../static/img/logo/css3.png'
 import linux from '../static/img/logo/linux.png'
 import tomcat from '../static/img/logo/tomcat.png'
 import mssql from '../static/img/logo/mssql.png'
-import gitlab from '../static/img/logo/gitlab.png'
+import github from '../static/img/logo/github.png'
+import react from '../static/img/logo/react.png'
+import s3 from '../static/img/logo/s3.png'
 import '../css/Work.css'
 
 function MyProject() {
@@ -26,39 +28,20 @@ function MyProject() {
 
   const projectList = [
     {
-      title: '',
-      period: '25.06.13 ~ 25.07.07',
-      icons: [boot, javascript, oracle, linux],
+      title: 'yolo 기반 체형확인 및 패션 스타일러 플랫폼',
+      period: '24.02.01 ~ 24.02.28',
+      icons: [boot, javascript, oracle, react, s3, github],
       description: '단독 백엔드 개발자로 참여해 보안 강화, 성능 개선, 사용자 편의 기능을 구현하며 안정적인 시스템 운영을 이끌었습니다.',
-      component: Kamis
+      component: Letmein,
+      oranization : 'team'
     },
     {
-      title: '4대강 수계기금 시스템 개편용역',
-      period: '25.02.26 ~ 25.06.13',
-      icons: [spring, javascript, oracle, mssql, gitlab],
-      description: '백엔드 개발자로 참여해 결산 로직 개선과 보고서 자동화 기능을 구현하며 재무 데이터의 신뢰성과 업무 효율성을 높였습니다.',
-      component: River
-    },
-    {
-      title: '구례군청 홈페이지 시스템 통합 유지보수',
-      period: '25.12.20 ~ 25.02.06',
-      icons: [spring, javascript, maria, linux, tomcat, svn],
-      description: 'CMS와 FullCalendar API 기반 시각화 기능, 전남 일자리정보망 연계 기능을 개발하고 홈페이지 유지보수를 담당했습니다.',
-      component: Gurye
-    },
-    {
-      title: 'IoT 보안인증 운영관리시스템 고도화',
-      period: '25.11.14 ~ 25.01.06',
-      icons: [spring, javascript, maria, linux, tomcat, svn],
-      description: '보안 강화, 사용자 편의 기능 개선, 데이터 시각화 대시보드 구현을 통해 시스템 안정성과 효율성을 높였습니다.',
-      component: Iot
-    },
-    {
-      title: 'KAMIS 식재료 백과 개편 용역',
-      period: '25.09.02 ~ 25.11.12',
-      icons: [boot, javascript, oracle, linux],
-      description: '기획 및 백엔드 개발자로 참여해 콘텐츠 편집 기능과 UI 중심의 관리자 페이지를 구현했습니다.',
-      component: Kamis2
+      title: 'HEF',
+      period: '23.11.22 ~ 23.12.08',
+      icons: [spring, javascript, oracle, html5, css3, github],
+      description: '단독 백엔드 개발자로 참여해 보안 강화, 성능 개선, 사용자 편의 기능을 구현하며 안정적인 시스템 운영을 이끌었습니다.',
+      component: Letmein,
+       oranization : 'team'
     }
   ]
 
@@ -77,6 +60,7 @@ function MyProject() {
             onClick={() => openModal(project.component)}
           >
             <div className='card-header'>
+            <span id='label'>{project.oranization === 'team' ? '팀 프로젝트' :'개인 프로젝트' }</span>
               <h2>{project.title}</h2>
               <span className='card-period'>{project.period}</span>
             </div>

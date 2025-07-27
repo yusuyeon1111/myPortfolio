@@ -29,9 +29,9 @@
   display: none;
 }
 .modal-close {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
+  position: fixed;
+  top: 2rem;
+  right: 12rem;
   background: none;
   font-size: 1.5rem;
   border: none;

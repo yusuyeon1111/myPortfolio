@@ -43,7 +43,7 @@
 .project-container ul li {
   position: relative;
   padding-left: 1.2rem;
-  margin-bottom: 1px;
+  margin-bottom: 8px;
 }
 
 .project-container ul li::before {
@@ -55,3 +55,20 @@
   line-height: 1;
 }
 
+.project-content {
+  margin: 2px;
+  padding: 1%;
+}
+
+.project-image {
+  width: 700px;
+}
+
+.project-container button {
+  background-color: white;
+  border: none;
+  padding: 0.4rem 1rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  border-radius: 4px;
+}

@@ -19,6 +19,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  margin-bottom: 5%;
 }
 
 #skils {
@@ -35,15 +36,15 @@
   margin-bottom: 20px;
 }
 
-/* ---------- 해시태그 스타일 ---------- */
 .skil-tag span {
   padding: 8px 16px;
   border-radius: 20px;
-  background-color: #F3F0EB;  /* 기본 크림색 */
-  color: #4B3E2E;             /* 부드러운 딥 브라운 */
+  background-color: #F3F0EB;  
+  color: #4B3E2E;             
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease;
+  font-size: clamp(0.8rem, 1vw, 1.2rem);
 }
 
 .skil-tag span:hover {
