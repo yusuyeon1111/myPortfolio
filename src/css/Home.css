@@ -19,7 +19,8 @@
 }
 
 .home-container {
-  height: 100vh; /* 전체 화면 */
+   height: 100vh;
+  scroll-snap-align: start;
   padding: 30px;
   background-image: url('../static/img/MainImg/background.jpg');
   box-sizing: border-box;
@@ -44,7 +45,7 @@
   position: relative;
   display: inline-block;
   width: 100%;
-  max-width: 850px;
+  max-width: 700px;
   margin: 0 auto;
 }
 
@@ -125,7 +126,7 @@
   margin: 0 auto;
 }
 
-@media(max-width:1400px) {#portfolio {top: 25%;}}
+@media(max-width:1400px) {#portfolio {top: 25%;} }
 @media(max-width:740px) {#portfolio {top: 32%;} #click {width: 80%;}}
 @media(max-width:675px) {#click {width: 60%;}}
 @media(max-width:590px) {.click-container{right: -20%;}

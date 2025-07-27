@@ -1,95 +1,58 @@
 import React from 'react'
 import '../css/About.css'
-import {motion} from 'framer-motion'
-import logo1 from '../static/img/logo1.png'
-import logo2 from '../static/img/logo2.jpg'
-import boot from '../static/img/logo/boot.png'
-import spring from '../static/img/logo/spring.png'
-import java from '../static/img/logo/java.png'
-import javascript from '../static/img/logo/javascript.png'
-import egov from '../static/img/logo/egov.png'
-import react from '../static/img/logo/react.png'
-import html5 from '../static/img/logo/html5.png'
-import css3 from '../static/img/logo/css3.png'
-import oracle from '../static/img/logo/oracle.png'
-import maria from '../static/img/logo/mariadb.png'
-import git from '../static/img/logo/git.png'
-import svn from '../static/img/logo/svn.png'
+import me from '../static/img/ME.jpg'
 function About() {
   return (
-        <div className='about-container'>
-        <p id='about-p'>ABOUT ME</p>
-        <div>
-        </div>
-        <p id='skils'>SKILS 🔧</p>
-        <div className='skil-container'>
-            <div className='skil-group'>
-                <p>FRONTEND</p>
-                <div className='icon-row'>
-                <img src={react} />
-                <img src={javascript} />
-                <img src={html5} />
-                <img src={css3} />
-                </div>
-            </div>
-            <div className='skil-group'>
-                <p>BACKEND</p>
-                <div className='icon-row'>
-                <img src={java} />
-                <img src={spring} />
-                <img src={boot} />
-                </div>
-            </div>
-            <div className='skil-group'>
-                <p>DATABASE</p>
-                <div className='icon-row'>
-                <img src={oracle} />
-                <img src={maria} />
-                </div>
-            </div>
-            <div className='skil-group'>
-                <p>VERSION CONTROL</p>
-                <div className='icon-row'>
-                <img src={git} />
-                <img src={svn} />
-                </div>
-            </div>
+   <div className="about-container">
+      <div className="left-section">
+        <h1>ABOUT ME</h1>
+        <img src={me} className="profile-photo" />
+        <h2 className="name">유 수 연</h2>
+        <p>birth : 02.03.11</p>
+        <p>e-mail : yusuyeon443@gmail.com</p>
+        <p>tel : 010-8609-8075</p>
+      </div>
+
+      <div className="right-section">
+        <div className="summary">
+          <p>웹 서비스의 안정성과 효율을 중요하게 생각합니다.</p>
+          <p>사용자 중심의 기능 구현과 유지보수를 고려한 구조 설계를 지향합니다.</p>
+          <p>팀과의 소통을 통해 더 나은 서비스를 만드는 데에 보람을 느낍니다.</p>
         </div>
 
-        <div className='education'>
-            <p>EDUCATION 🏫</p>
-            <div className='card'>
-                <div>
-                    <img src={logo1} id='logo1' style={{marginBottom:'17px',marginTop:'10px'}}/>
-                    <p>한국방송통신대학교</p>
-                    <p>컴퓨터과학과</p>
-                    <p>25.03 ~ 28.02 [재학중]</p>
-                </div>
-                <div>
-                    <img src={logo2} id='logo2' style={{marginBottom:'17px',marginTop:'10px'}}/>
-                    <p>스마트인재개발원</p>
-                    <p style={{marginTop:'-4%'}}>클라우드 기반 인공지능</p>
-                    <p style={{marginTop:'-10%'}}>서비스 엔지니어과정</p>
-                    <p style={{marginTop:'-4%'}}>23.08.17 ~ 2024.02.29 [1040h]</p>
-                </div>
-            </div>
+        <div className="info-columns">
+          <div className="work-section">
+            <h3>WORK</h3>
+            <p><strong>(주) 쿠로엔시스</strong> 개발사업부 / 사원</p>
+            <p>24.04 ~ 25.08 [재직중] 1년 4개월</p>
+            <ul>
+              <li>SI 4개 / SM 1개 프로젝트 수행</li>
+              <li>기획 및 제안서 등 다양한 업무 경험</li>
+              <li>25.06 KAMIS 식재료백과 개편 및 유지보수</li>
+              <li>25.02 4대강 수계기금 시스템 개편</li>
+              <li>24.12 구례군청 홈페이지 유지보수</li>
+              <li>24.11 IoT 보안인증 시스템 고도화</li>
+              <li>24.09 KAMIS 식재료백과 개편</li>
+            </ul>
+          </div>
+
+          <div className="education-section">
+            <h3>EDUCATION</h3>
+            <ul>
+              <li>한국방송통신대 컴퓨터과학과<br/><span className="date">25.03 ~ 28.02 [재학중]</span></li>
+              <li>전남대 헬스케어메디컬공학부<br/><span className="date">21.03 ~ 22.02 [중퇴]</span></li>
+              <li>스마트인재개발원 클라우드기반 인공지능 서비스 엔지니어 과정<br/><span className="date">23.08 ~ 24.02 [1040h]</span></li>
+            </ul>
+
+            <h3>자격증</h3>
+            <ul>
+              <li>리눅스마스터 2급</li>
+              <li>정보처리산업기사</li>
+            </ul>
+          </div>
         </div>
-            <div className='work'>
-                <h2>WORK 💼</h2>
-                <div className='top-work'>
-                    <div>
-                        <p>(주) 쿠로엔시스</p>
-                        <p>개발사업부 / 사원</p>
-                        <p>24.04 ~ [재직중] (약 1년 5개월)</p>
-                        <p>SI 프로젝트 4개, SM 프로젝트 1개를 수행했습니다.</p>
-                    </div>
-                   <div className="skills-container">
-                    <h2>실무 경험 기술</h2>
-                        
-                    </div>
-                    </div>
-                    </div>
-                    </div>
+      </div>
+    </div>
   )
 }
 

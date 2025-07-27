@@ -1,165 +1,95 @@
-@font-face {
-  font-family: 'Freesentation-9Black';
-  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-9Black.woff2') format('woff2');
-  font-weight: 900;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'EliceDigitalBaeum-Bd';
-  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_elice@1.0/EliceDigitalBaeum-Bd.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-}
-
-#about-p {
-  font-family: 'ghanachoco';
-  font-size: 5rem;
-  padding-top: 1%;
-  margin-bottom: -0.3%;
-}
-
 .about-container {
-  font-family: 'EliceDigitalBaeum-Bd';
-  max-width: 1500px;
-  margin: 0 auto;
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-.education {
- padding: 1rem;
-  background-color: cornsilk;
-  text-align: center;
-  border-radius: 16px;
-}
-
-.education p {  font-family: 'EliceDigitalBaeum-Bd';}
-
-.education p:nth-child(1) {
-  font-size: 7rem;
-}
-
-.education p:nth-child(n+1) {font-size: 1.3rem;}
-
-.education .card {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   gap: 2rem;
-  margin-bottom: 2rem;
+  padding: 2rem;
+  font-family: 'Pretendard', sans-serif;
+  color: #222;
+  flex-wrap: wrap;
+   height: 100vh;
+  scroll-snap-align: start;
 }
 
-.education .card > div {
-  background-color: #fff;
-  border: 1px solid #e0e0e0;
-  border-radius: 16px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-  padding: 1.5rem;
-  width: 250px;
-  text-align: center;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.education .card > div:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
-}
-
-.card > div p:nth-child(2) {
-  margin-top: -1%;
-  font-size: clamp(1.5rem, 2vw, 2rem);
-  font-weight: bold;
-}
-
-.card > div p:nth-child(n+3) {
-  margin-top: -1%;
-  font-size: clamp(1rem, 1.2vw, 2rem);
-}
-
-.education .card img:nth-child(1) {
-  width: 80px;
-  height: auto;
-}
-
-.education .card > div.proof-card {
-  width: 220px;
-}
-
-.education .card > div.proof-card img {
-  width: 100%;
-  height: auto;
-  max-height: 500px;
-  object-fit: contain;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-}
-
-.education p:nth-child(1) {
-    font-size: clamp(1.4rem, 2.7vw, 3rem);
-}
-
-#workWord {
-    font-size: clamp(1.4rem, 2.7vw, 3rem);
-}
-.top-work {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 40px; /* 요소 사이 간격 */
-  margin-top: 20px;
-  flex-wrap: wrap; /* 화면 작아지면 아래로 내려가도록 */
-}
-
-.top-work > div:first-child {
+.left-section {
   flex: 1;
   min-width: 250px;
+  text-align: center;
 }
 
-.skil-container {
-  width: 90%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 20px;
-}
-
-.skil-group {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-width: 180px;
-}
-
-.skil-group p {
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.icon-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  justify-content: center;
-}
-
-.icon-row img {
-  width: 70px;
-  height: 70px;
-  padding: 10px;
-  background-color: #f5f5f5;
+.profile-photo {
+  max-width: 220px;
   border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  object-fit: contain;
-  transition: transform 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-.icon-row img:hover {
-  transform: scale(1.05);
+.name {
+  font-size: 22px;
+  margin-top: 1rem;
+  font-weight: bold;
 }
 
-
-#skils {
-  font-size: clamp(1.4rem, 2.7vw, 3rem);
+.right-section {
+  flex: 3;
+  min-width: 300px;
 }
 
+.summary {
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 10px;
+  line-height: 1.6;
+}
+
+.info-columns {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.work-section, .education-section {
+  flex: 1;
+  min-width: 280px;
+}
+
+.work-section h3, .education-section h3 {
+  color: #5B5147; 
+  font-size: 20px;
+  border-bottom: 2px solid #5B5147; ;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 1rem;
+}
+
+.date {
+  font-size: 13px;
+  color: #888;
+}
+@media (max-width: 966px){
+    .info-columns {gap: 0;}
+}
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-columns {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .right-section {
+    width: 100%;
+  }
+
+  .summary {
+    text-align: center;
+  }
+
+  .work-section, .education-section {
+    width: 100%;
+  }
+}

@@ -1,0 +1,94 @@
+/* ---------- 폰트 선언 ---------- */
+@font-face {
+  font-family: 'goorm-sans-bold';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408@1.0/goorm-sans-bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* ---------- 레이아웃 ---------- */
+.skil-container {
+   height: 100vh;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#skils {
+  font-family: 'goorm-sans-bold';
+  font-size: clamp(2rem, 2.5vw, 4rem);
+  margin-bottom: 1rem;
+}
+
+.skil-tag {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* ---------- 해시태그 스타일 ---------- */
+.skil-tag span {
+  padding: 8px 16px;
+  border-radius: 20px;
+  background-color: #F3F0EB;  /* 기본 크림색 */
+  color: #4B3E2E;             /* 부드러운 딥 브라운 */
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.skil-tag span:hover {
+  background-color: #E5DED6;  /* hover: 라이트 베이지 */
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.skil-tag span.selected {
+  background-color: #CBBFA5;  /* 선택됨: 라떼색 */
+  color: white;
+}
+
+/* ---------- 아이콘 그룹 ---------- */
+.icon-group {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 2rem;
+  justify-items: center;
+  max-width: 800px;
+}
+
+/* 기본 흐릿하게 */
+.icon-group img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  opacity: 0.2;
+  transition: opacity 0.4s ease, transform 0.3s ease;
+}
+
+/* 선택된 태그일 경우 진하게 */
+.icon-group img.active {
+  opacity: 1;
+}
+
+/* hover 시 확대 */
+.icon-group img:hover {
+  transform: scale(1.15);
+}
+
+@media(max-width:730px) {
+  .icon-group {
+  grid-template-columns: repeat(4, 1fr);
+}
+}
