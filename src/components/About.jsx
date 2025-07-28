@@ -25,7 +25,7 @@ function About() {
         <div className="work-section">
             <h3>WORK</h3>
             <p><strong>(주) 쿠로엔시스</strong> 개발사업부 / 사원</p>
-            <p>24.04 ~ 25.08 [재직중] 1년 4개월</p>
+            <p>24.04 ~ 25.07 [재직중] 1년 4개월</p>
             <ul>
               <li>SI 4개 / SM 1개 프로젝트 수행</li>
               <li>기획 및 제안서 등 다양한 업무 경험</li>
@@ -48,7 +48,6 @@ function About() {
             <h3>자격증</h3>
             <ul>
               <li>리눅스마스터 2급</li>
-              <li>정보처리산업기사</li>
             </ul>
             <h3>ETC</h3>
               <a href='https://github.com/yusuyeon1111' target='_blank'><img src={github}/></a>

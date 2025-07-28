@@ -13,7 +13,7 @@ function Home() {
               </div>
               <div className="resume-download-container">
                 <p className="resume-download-title">이력서 다운로드</p>
-                <a href="/path-to-resume.pdf" download>
+                <a href="/유수연_이력서.pdf" download>
                   <button className="resume-download-button">다운로드 <IoMdDownload /></button>
                 </a>
               </div>

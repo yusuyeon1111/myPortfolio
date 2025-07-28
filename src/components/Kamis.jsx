@@ -9,7 +9,7 @@ function Kamis() {
     <div className='project-inner'>
   <span className="project-label">WORK</span>
   <h3>🍏 KAMIS 식재료백과 유지보수</h3>
-  <p className="project-period">2025.06.13 ~ 2025.07.07</p>
+  <p className="project-period">2025.06.13 ~ 2025.07.08</p>
 
   <p className="project-label">TEAM</p>
   <p>백엔드 개발 1명 (본인), 퍼블리셔 1명</p>

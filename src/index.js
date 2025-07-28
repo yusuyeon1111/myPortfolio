@@ -8,9 +8,11 @@ import Gurye from './components/Gurye'
 import Iot from './components/IoT'
 import Free from './components/Free'
 import Kamis2 from './components/Kamis2'
+import HEF from './components/HEF'
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Letmein from './components/Letmein';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -24,6 +26,8 @@ root.render(
             <Route path="/kamis2" element={<Kamis2 />} />
             <Route path="/work" element={<Work />} />
             <Route path="/free" element={<Free />} />
+            <Route path="/letmein" element={<Letmein />} />
+            <Route path="/hef" element={<HEF />} />
         </Routes>
     </BrowserRouter>
 );

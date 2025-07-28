@@ -30,6 +30,7 @@
   display: flex;
   flex-wrap: wrap;
   flex: 3;
+  gap: 2rem;
 }
 
 .summary {
@@ -40,17 +41,13 @@
   line-height: 1.6;
 }
 
-.inner-right {
-  margin-left: 7%;
-}
-
 .info-columns {
   gap: 3rem;
 }
 
-.work-section, .education-section {
+.inner-right, .inner-left {
   flex: 1;
-  min-width: 280px;
+  min-width: 350px;
 }
 
 .work-section h3, .education-section h3 {
@@ -63,15 +60,14 @@
 
 ul {
   list-style-type: disc;
-  margin-left: 1rem;
 }
 
 .date {
   font-size: 13px;
   color: #888;
 }
-@media (max-width: 966px){
-    .info-columns {gap: 0;}
+@media (max-width: 1100px){
+  .right-section {gap: 0;}
 }
 @media (max-width: 768px) {
   .about-container {

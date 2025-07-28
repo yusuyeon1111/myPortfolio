@@ -19,12 +19,9 @@ import github from '../static/img/logo/github.png'
 import react from '../static/img/logo/react.png'
 import s3 from '../static/img/logo/s3.png'
 import '../css/Work.css'
-
+import { useNavigate } from 'react-router-dom'
 function MyProject() {
-  const [modalComponent, setModalComponent] = useState(null)
-
-  const openModal = (Component) => setModalComponent(<Component />)
-  const closeModal = () => setModalComponent(null)
+  const navigate = useNavigate()
 
   const projectList = [
     {
@@ -32,15 +29,15 @@ function MyProject() {
       period: '24.02.01 ~ 24.02.28',
       icons: [boot, javascript, oracle, react, s3, github],
       description: '단독 백엔드 개발자로 참여해 보안 강화, 성능 개선, 사용자 편의 기능을 구현하며 안정적인 시스템 운영을 이끌었습니다.',
-      component: Letmein,
+      path: '/letmein',
       oranization : 'team'
     },
     {
       title: 'HEF',
       period: '23.11.22 ~ 23.12.08',
       icons: [spring, javascript, oracle, html5, css3, github],
-      description: '단독 백엔드 개발자로 참여해 보안 강화, 성능 개선, 사용자 편의 기능을 구현하며 안정적인 시스템 운영을 이끌었습니다.',
-      component: Letmein,
+      description: 'CR 신분증 인증을 기반으로 개인 간 무형 서비스 매칭을 지원하고, 안정적인 게시판 및 회원 관리 시스템을 제공하는 C2C 플랫폼입니다',
+      path: '/hef',
        oranization : 'team'
     }
   ]
@@ -57,7 +54,7 @@ function MyProject() {
           <div
             key={index}
             className='project-card'
-            onClick={() => openModal(project.component)}
+            onClick={() => navigate(project.path)}
           >
             <div className='card-header'>
             <span id='label'>{project.oranization === 'team' ? '팀 프로젝트' :'개인 프로젝트' }</span>
@@ -73,10 +70,6 @@ function MyProject() {
           </div>
         ))}
       </div>
-
-      <Modal isOpen={!!modalComponent} onClose={closeModal}>
-        {modalComponent}
-      </Modal>
     </section>
   )
 }
