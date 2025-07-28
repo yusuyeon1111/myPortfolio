@@ -45,12 +45,8 @@ function Letmein() {
       <div>
         <p className="project-label">🌟 3. 주요 기능</p>
         <p><strong>1️⃣ 회원관리 및 보안 시스템 구축 </strong></p>
-        <p> 프론트엔드 : React를 활용한 회원가입/로그인/마이페이지 UI 구현 </p>
         <ul>
           <li>React Router와 Axios를 활용해 회원가입, 로그인, 마이페이지 UI 및 상태 관리 구현</li>
-        </ul>
-         <p> 백엔드 : Spring Boot 기반 사용자 인증 및 보안 시스템 개발 </p>
-        <ul>
           <li>Spring Security와 BCryptPasswordEncoder를 활용한 안전한 비밀번호 암호화</li>
           <li>이메일 인증 API 구현으로 사용자 계정 보안 강화</li>
         </ul>
@@ -73,6 +69,11 @@ function Letmein() {
       </div>
       <div>
         <p><strong>4️⃣ 체형분석 기능</strong></p>
+        <ul>
+           <li>React로 이미지 업로드 페이지 구현 및 사용자 이미지 입력 처리</li>
+          <li>AWS S3에 이미지 업로드 후, Python 기반 체형 분석 API 호출</li>
+          <li>분석 결과를 바탕으로 체형에 맞는 아바타 생성 및 코디 피팅 기능 제공</li>
+        </ul>
         <p>이미지 처리</p>
         <ul>
           <li>React 기반 이미지 업로드 UI 및 상태 관리 구현</li>
