@@ -28,7 +28,7 @@ function MyProject() {
       title: 'yolo 기반 체형확인 및 패션 스타일러 플랫폼',
       period: '24.02.01 ~ 24.02.28',
       icons: [boot, javascript, oracle, react, s3, github],
-      description: '단독 백엔드 개발자로 참여해 보안 강화, 성능 개선, 사용자 편의 기능을 구현하며 안정적인 시스템 운영을 이끌었습니다.',
+      description: 'React와 Spring Boot 기반으로 회원 관리, 마이페이지, 관리자 기능, 커뮤니티 게시판, 체형 분석 및 아바타 생성, 메인 UX까지 구현한 풀스택 웹 서비스',
       path: '/letmein',
       oranization : 'team'
     },
@@ -36,7 +36,7 @@ function MyProject() {
       title: 'HEF',
       period: '23.11.22 ~ 23.12.08',
       icons: [spring, javascript, oracle, html5, css3, github],
-      description: 'CR 신분증 인증을 기반으로 개인 간 무형 서비스 매칭을 지원하고, 안정적인 게시판 및 회원 관리 시스템을 제공하는 C2C 플랫폼입니다',
+      description: 'OCR 신분증 인증을 기반으로 개인 간 무형 서비스 매칭을 지원하고, 안정적인 게시판 및 회원 관리 시스템을 제공하는 C2C 플랫폼입니다',
       path: '/hef',
        oranization : 'team'
     }
