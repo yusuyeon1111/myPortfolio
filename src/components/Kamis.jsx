@@ -38,6 +38,7 @@ function Kamis() {
     <li>
     <strong>댓글 비동기 처리 및 실시간 갱신 구현:</strong> JSP와 Ajax를 이용하여 댓글 등록, 수정, 삭제 시 비동기 처리 및 실시간 갱신 기능을 구현하여 사용자 경험을 향상시켰습니다
     </li>
+    <li><strong>Linux :</strong>Linux 환경에서 Putty, FileZilla 등을 활용한 톰캣 배포 </li>
   </ul>
   <p className="project-label">📈 3. 업무 성과 및 프로젝트 운영 능력</p>
   <br/>
